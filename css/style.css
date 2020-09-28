@@ -34,10 +34,14 @@ div.w3-container{
     color: white !important;
     font-family: 'Roboto', sans-serif; 
 }
+.w3-bar a,p{
+    font-size: 10px;
+  }
 
 .w3-bar-item{
     transition: .1s ease-out;
 }
+
 .w3-bar-item:hover{
     color: #d3f6f6;
 }
@@ -419,5 +423,196 @@ div.w3-container{
     }
 }
 
-
 /* ---------------------------------------------------- end header ------------------------------------------------------------ */
+
+/* ---------------------------------------------------- about ------------------------------------------------------------ */
+
+.aboutus{
+    width: 88%;
+    margin: 50px auto 30px auto ;
+    min-height: 80vh;
+    background-color: #00387a;
+    display: flex;
+}
+
+.aboutus-left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aboutus-left-heading{
+    cursor: context-menu;
+    text-align: center;
+    font-size: 55px;
+    font-family: 'Libre Franklin', sans-serif;
+    color:white;
+    letter-spacing: 3px;
+    /* margin-top: 12%; */
+}
+
+.aboutus-left-para{
+    cursor: context-menu;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color:#d3f6f6;
+    width: 85%;
+    margin-top: 20px;
+    padding-left: 30px;
+    line-height: 25px;
+}
+.aboutus-left-button{
+    padding-top: 30px;
+    transition: .2s ease-out;
+}
+
+.aboutus-left-button a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    border-bottom: 2px solid white;
+    padding: 8px 15px;
+}
+.aboutus-left-button:hover{
+    transform: scale(1.05);
+    
+}
+
+.aboutus-left-button a:hover{
+    color: #d3f6f6;
+    border-bottom: 2px solid #d3f6f6;
+}
+
+.aboutus-right{
+    width: 50%;
+    margin: auto;
+    background-color:#00387a;
+}
+
+.aboutus-right img{
+    height: 70vh;
+    width: 95%;
+    margin: auto;
+    /* transform: translateY(7%); */
+} 
+
+@media screen and (min-width:900px) and (max-width:1299px){
+    .aboutus{
+        min-height: 63vh;
+        width: 95%;
+    }
+    
+    .aboutus-left-heading{
+        font-size: 45px;
+    }
+    
+    .aboutus-left-para{
+        font-size: 13px;
+        margin-top: 15px;
+        padding-left: 25px;
+        line-height: 22px;
+    }
+    .aboutus-left-button{
+        padding-top: 25px;
+    }
+    
+    .aboutus-left-button a{
+        font-size: 12px;
+        padding: 5px 15px;
+    }
+    .aboutus-left-button:hover{
+        transform: scale(1.03);
+        
+    }
+    .aboutus-right img{
+        height: 55vh;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:899px){
+    .aboutus{
+        min-height: 58vh;
+        width: 95%;
+    }
+    
+    .aboutus-left-heading{
+        font-size: 40px;
+    }
+    
+    .aboutus-left-para{
+        width: 95%;
+        font-size: 11px;
+        margin-top: 15px;
+        padding-left: 20px;
+        line-height: 20px;
+    }
+    .aboutus-left-button{
+        padding-top: 22px;
+    }
+    
+    .aboutus-left-button a{
+        font-size: 10px;
+        padding: 5px 15px;
+    }
+    .aboutus-left-button:hover{
+        transform: scale(1.03);
+        
+    }
+    .aboutus-right img{
+        height: 45vh;
+    }
+}
+
+@media screen and (max-width:767px){
+    .aboutus{
+        min-height: 70vh;
+        width: 95%;
+        flex-direction: column;
+    }
+    .aboutus-left{
+        width: 98%;
+    }
+    .aboutus-left-heading{
+        padding-top: 15px;
+        font-size: 35px;
+    }
+    
+    .aboutus-left-para{
+        width: 95%;
+        font-size: 8px;
+        margin-top: 12px;
+        padding-left: 15px;
+        line-height: 14px;
+    }
+    .aboutus-left-button{
+        padding-top: 5px;
+        padding-bottom: 13px;
+    }
+    
+    .aboutus-left-button a{
+        font-size: 8px;
+        padding: 3px 12px;
+    }
+    .aboutus-left-button:hover{
+        transform: scale(1.03);
+        
+    }
+    .aboutus-right{
+        height: 43vh;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .aboutus-right img{
+        height: 40vh;
+        width: 95%;
+        margin: auto;
+        transform: translateX(2.5%);
+    } 
+}
+
+
+/* ---------------------------------------------------- end about ------------------------------------------------------------ */
