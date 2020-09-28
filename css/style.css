@@ -234,7 +234,7 @@ div.w3-container{
     align-items: center;
     flex-direction: column;
     width: 22%;
-    min-height: 20vh;
+    min-height: 23vh;
     margin: auto;
     background-color: #e5eef6;
     border-radius: 5px;
@@ -274,7 +274,7 @@ div.w3-container{
     width: 80%;
     font-size: 63px;
     font-family: 'Libre Franklin', sans-serif;
-    color: #00387a;
+    color: #1e266d;
     letter-spacing: 3px;
     /* line-height: 12vh; */
 }
@@ -282,7 +282,7 @@ div.w3-container{
 .main-para{
     width: 80%;
     font-size: 15px;
-    color: #84e0e4;
+    color:#00387a;
     letter-spacing: 2px;
     font-family: 'Raleway', sans-serif; 
     padding-top: 20px;
@@ -496,6 +496,7 @@ div.w3-container{
     height: 70vh;
     width: 95%;
     margin: auto;
+    object-fit: cover;
     /* transform: translateY(7%); */
 } 
 
