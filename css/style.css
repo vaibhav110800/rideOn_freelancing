@@ -627,18 +627,16 @@ div.w3-container{
     font-family: 'Libre Franklin', sans-serif;
 }
 .logo-box{
-    /* background-color:#e5eef6; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 92%;
+    justify-content: center;
+    width: 90%;
     margin: 25px auto;
 }
 
 .logo-box-box{
     background-color: #f8f9fa;
-    width: 18%;
-    margin: 8px 0.5px;
+    width: 19.7%;
     height: 25vh;
     display: flex;
     justify-content: center;
@@ -652,9 +650,52 @@ div.w3-container{
     background-color: #f8f9fa;
     box-shadow: 0 0 2rem 0.5rem rgba(0, 0, 0, .08);
     border-radius: 2px;
+    z-index: 2;
 }
 
 .logo-box-box img{
     width: 180px;
+}
+
+@media screen and (min-width:900px) and (max-width:1299px){
+    .logo-box{
+        width: 95%;
+    }
+    .logo-box-box{
+        width: 20%;
+        height: 22vh;
+    }
+    .logo-box-box img{
+        width: 150px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:899px){
+    .logo-box{
+        width: 96%;
+    }
+    .logo-box-box{
+        width: 20%;
+        height: 20vh;
+    }
+    .logo-box-box img{
+        width: 120px;
+    }
+}
+
+@media screen and (max-width:767px){
+    .partner-heading{
+        font-size: 40px;
+    }
+    .logo-box{
+        width: 96%;
+    }
+    .logo-box-box{
+        width: 20%;
+        height: 16vh;
+    }
+    .logo-box-box img{
+        width: 60px;
+    }
 }
 /* ---------------------------------------------------- end partners ------------------------------------------------------------ */
