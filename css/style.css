@@ -347,7 +347,6 @@ div.w3-container{
     .main-home-left-bottom-box h1{
         font-family: 'Montserrat', sans-serif;
         font-size: 14px;
-        color:#1e266d;
         font-weight: 800;
     }
     
@@ -357,7 +356,6 @@ div.w3-container{
         margin:0 auto;
         font-size: 8px;
         text-align: left;
-        color: #00387a;
         margin-left: 5px;
     }
 }
@@ -613,6 +611,50 @@ div.w3-container{
         transform: translateX(2.5%);
     } 
 }
-
-
 /* ---------------------------------------------------- end about ------------------------------------------------------------ */
+
+/* ---------------------------------------------------- partners -------------------------------------------------------------- */
+
+.partner{
+    min-height: 40vh;
+    padding-top: 20px;
+}
+
+.partner-heading{
+    text-align: center;
+    font-size: 60px;
+    color: #00387a;
+    font-family: 'Libre Franklin', sans-serif;
+}
+.logo-box{
+    /* background-color:#e5eef6; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 92%;
+    margin: 25px auto;
+}
+
+.logo-box-box{
+    background-color: #f8f9fa;
+    width: 18%;
+    margin: 8px 0.5px;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: .01px solid white;
+    transition: box-shadow .2s linear;
+    cursor: pointer;
+}
+.logo-box-box:hover{
+    background-color: #f8f9fa;
+    box-shadow: 0 0 2rem 0.5rem rgba(0, 0, 0, .08);
+    border-radius: 2px;
+}
+
+.logo-box-box img{
+    width: 180px;
+}
+/* ---------------------------------------------------- end partners ------------------------------------------------------------ */
