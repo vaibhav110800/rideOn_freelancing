@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@900&family=Montserrat:wght@600&family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@900&family=Montserrat:wght@800&family=Raleway:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 /* 
@@ -68,8 +68,9 @@ div.w3-container{
     /* max-width: 1300px;
     margin: 20px auto; */
     padding: 10px;
-    background:#d3f6f6;
+    background:#F2F3F4;
     box-sizing: border-box;
+    box-shadow: 0 3px 3px 0px rgba(0,0,0,.2);
 }
 
 .navbaru-logo{
@@ -104,14 +105,12 @@ div.w3-container{
     margin: 0px 5px;
     padding: 8px 20px;
     text-decoration: none;
-    color: #1e266d;
+    color: black;
 }
 .navu ul li a.active,
 .navu ul li a:hover{
-    background: #84e0e4;
-    color: #1e266d;
+    color: #00387a;
     transition: .5s;
-    border-radius: 8px;
 }
 
 @media screen and (max-width:649px){
@@ -246,8 +245,8 @@ div.w3-container{
 .main-home-left-bottom-box h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    color: #00387a;
-    font-weight: 800;
+    color:#1e266d;
+    font-weight: 1000;
     text-align: center;
 }
 
@@ -257,7 +256,7 @@ div.w3-container{
     margin:0 auto;
     font-size: 10px;
     text-align: center;
-    color: #84e0e4;
+    color:  #00387a;
 }
 
 
@@ -348,7 +347,7 @@ div.w3-container{
     .main-home-left-bottom-box h1{
         font-family: 'Montserrat', sans-serif;
         font-size: 14px;
-        color: #00387a;
+        color:#1e266d;
         font-weight: 800;
     }
     
@@ -358,7 +357,7 @@ div.w3-container{
         margin:0 auto;
         font-size: 8px;
         text-align: left;
-        color: #84e0e4;
+        color: #00387a;
         margin-left: 5px;
     }
 }
