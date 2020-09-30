@@ -459,6 +459,7 @@ div.w3-container{
     margin-top: 20px;
     padding-left: 30px;
     line-height: 25px;
+    letter-spacing: 1px;
 }
 .aboutus-left-button{
     padding-top: 30px;
@@ -699,3 +700,89 @@ div.w3-container{
     }
 }
 /* ---------------------------------------------------- end partners ------------------------------------------------------------ */
+
+/* ---------------------------------------------------------- services -------------------------------------------------------------- */
+.services{
+    margin-top: 50px;
+    min-height: 90vh;
+}
+.services-top{
+    min-height: 50vh;
+    width: 89%;
+    margin: 0 auto;
+    background:linear-gradient(0deg, rgba(255, 255, 255, .2), rgba(255, 255, 255,0.2)), url(../images/4.services/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 90%;
+}
+.services-top-text{
+    width: 60%;
+    min-height: 40vh;
+    transform: translate(15%,12%);
+    background:linear-gradient(0deg, rgba(	0, 56, 122, .7), rgba(	0, 56, 122,.7));
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.services-top-text .h1{
+    color: white;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 55px;
+    letter-spacing: 2px;
+    margin-left: 5%;
+}
+.services-top-text .p{
+    color: #d3f6f6;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-left: 5%;
+}
+.services-bottom{
+    min-height: 45vh;
+    width: 89%;
+    margin: 30px auto;
+    display: flex;
+}
+.services-bottom-left{
+    width: 65%;
+    min-height: 40vh;
+}
+.services-bottom-left-text{
+    width: 70%;
+    min-height: 40vh;
+    transform: translateX(20%);
+    /* background-color: khaki; */
+}
+.services-bottom-left-text-h1{
+    font-size: 30px;
+    color: #1e266d;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2%;
+}
+.services-bottom-left-text-p{
+    font-size: 13px;
+    color:#00387a;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 4%;
+    margin-bottom: 2%;
+}
+.services-bottom-right{
+    width: 32%;
+    margin: 0 auto;
+}
+.services-bottom-right img{
+    height:40vh;
+    object-fit: cover;
+    width: 98%;
+    box-shadow: 8px 10px 14px -2px rgba(115,111,111,1);
+}
+
+.services-bottom-right-inner img{
+    height:20vh;
+    object-fit: cover;
+    width: auto;
+    transform: translate(-35%,-90%);
+    box-shadow: 1px 11px 14px -2px rgba(115,111,111,1);
+}
+/* -------------------------------------------------------- end services ------------------------------------------------------------ */
