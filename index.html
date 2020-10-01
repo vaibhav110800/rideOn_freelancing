@@ -44,7 +44,7 @@
             </div>
         </div>
 
-        <div class="navbaru">
+        <div class="navbaru" id="myHeader">
             <a href="#"><img class="navbaru-logo" src="images/logo.jpg" alt=""></a>
             <div class="menu-toggle"></div>
             <div class="navu">
@@ -229,6 +229,21 @@
         </div>
     </div>
     <!---------------------------------- end services ---------------------------------->
+
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbaru = document.getElementById("myHeader");
+        var sticky = navbaru.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                navbaru.classList.add("sticky");
+            } else {
+                navbaru.classList.remove("sticky");
+            }
+        }
+    </script>
 
 </body>
 

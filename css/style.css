@@ -65,8 +65,6 @@ div.w3-container{
 /* --------------- navbar --------------------- */
 .navbaru{
     position: relative;
-    /* max-width: 1300px;
-    margin: 20px auto; */
     padding: 10px;
     background:#F2F3F4;
     box-sizing: border-box;
@@ -127,6 +125,14 @@ div.w3-container{
         padding: 5px 10px;
     }
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+  }
 
 /* ------------------ carousel --------------------- */
 .main-home{
