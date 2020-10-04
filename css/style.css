@@ -1133,6 +1133,388 @@ div.w3-container{
 /* -------------------------------------------------------- end footer ------------------------------------------------------------ */
 
 /* -------------------------------------------------------- about us  ------------------------------------------------------------ */
+.about-us{
+    width: 90%;
+    margin: 30px auto;
+}
+
+.top-about-us{
+    text-align: center;
+    padding: 10px 0px 30px 0px;
+}
+
+.top-about-us .h1{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 40px;
+    color: #1e266d;
+}
+.top-about-us .p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #00387a;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.medium-image{
+    height: 40vh;
+    background:linear-gradient(0deg, rgba(255, 255, 255, .4), rgba(255, 255, 255, .4)), url(../images/6.aboutUs/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    color: whitesmoke;
+}
+
+.medium-image-inner{
+    background:linear-gradient(0deg, rgba(	0, 56, 122, .7), rgba(	0, 56, 122,.7));
+    width: 60%;
+    height: 27vh;
+    transform: translate(65%,65%);
+    display: flex;
+}
+.medium-image-inner-left{
+    width: 25%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.medium-image-inner-left img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.medium-image-inner-right{
+    width: 75%;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    color:#d3f6f6;
+}
+
+.medium-image-inner-right-p{
+    width: 90%;
+    /* margin: 0 auto; */
+    text-align: left;
+}
+
+.bottom-about-us{
+    padding-top: 90px;
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.bottom-about-us-left{
+    width: 39%;
+    background:linear-gradient(0deg, rgba(	0, 56, 122, .7), rgba(	0, 56, 122,.7)), url(../images/6.aboutUs/3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bottom-about-us-left-inner{
+    padding-left: 20px;
+    width: 90%;
+}
+
+.bottom-about-us-left-h{
+    color: #84e0e4;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.bottom-about-us-left-P{
+    color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 40px;
+    font-size: 12px;
+}
+
+.bottom-about-us-right{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bottom-about-us-right-inner{
+    padding-left: 20px;
+    width: 80%;
+}
+
+.bottom-about-us-right-h{
+    color: #1e266d;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.bottom-about-us-right-P{
+    color:#00387a;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 40px;
+    font-size: 12px;
+}
+
+@media screen and (min-width:900px) and (max-width:1299px){
+    .about-us{
+        width: 95%;
+    }
+    
+    .top-about-us .h1{
+        font-size: 40px;
+    }
+    .top-about-us .p{
+        font-size: 16px;
+        width: 80%;
+        margin: 20px auto;
+    }
+    
+    .medium-image{
+        height: 40vh;
+    }
+    
+    .medium-image-inner{
+        width: 60%;
+        height: 25vh;
+        transform: translate(65%,70%);
+    }
+    .medium-image-inner-left{
+        width: 25%;
+        margin: auto;
+    }
+    
+    .medium-image-inner-left img{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .medium-image-inner-right{
+        width: 75%;
+        margin: auto;
+        font-size: 11px;
+    }
+    
+    .medium-image-inner-right-p{
+        width: 95%;
+    }
+    
+    .bottom-about-us{
+        padding-top: 90px;
+        padding-bottom: 50px;
+    }
+    
+    .bottom-about-us-left{
+        width: 39%;
+        min-height: 70vh;
+    }
+    
+    .bottom-about-us-left-inner{
+        width: 90%;
+    }
+    
+    .bottom-about-us-left-h{
+        font-size: 18px;
+    }
+    
+    .bottom-about-us-left-P{
+        font-size: 12px;
+    }
+    
+    .bottom-about-us-right{
+        width: 60%;
+    }
+    .bottom-about-us-right-inner{
+        width: 80%;
+    }
+    
+    .bottom-about-us-right-h{
+        font-size: 18px;
+    }
+    
+    .bottom-about-us-right-P{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:899px){
+    .about-us{
+        width: 95%;
+    }
+    
+    .top-about-us .h1{
+        font-size: 40px;
+    }
+    .top-about-us .p{
+        font-size: 14px;
+        width: 90%;
+        margin: 20px auto;
+    }
+    
+    .medium-image{
+        height: 40vh;
+    }
+    
+    .medium-image-inner{
+        width: 60%;
+        height: 25vh;
+        transform: translate(65%,70%);
+    }
+    .medium-image-inner-left{
+        width: 25%;
+        margin: auto;
+    }
+    
+    .medium-image-inner-left img{
+        width: 90px;
+        height: 90px;
+    }
+    
+    .medium-image-inner-right{
+        width: 75%;
+        margin: auto;
+        font-size: 10px;
+    }
+    
+    .medium-image-inner-right-p{
+        width: 98%;
+    }
+    
+    .bottom-about-us{
+        padding-top: 90px;
+        padding-bottom: 50px;
+    }
+    
+    .bottom-about-us-left{
+        width: 39%;
+        min-height: 70vh ;
+    }
+    
+    .bottom-about-us-left-inner{
+        width: 90%;
+        padding-left: 10px;
+    }
+    
+    .bottom-about-us-left-h{
+        font-size: 15px;
+    }
+    
+    .bottom-about-us-left-P{
+        font-size: 10px;
+    }
+    
+    .bottom-about-us-right{
+        width: 60%;
+    }
+    .bottom-about-us-right-inner{
+        width: 90%;
+    }
+    
+    .bottom-about-us-right-h{
+        font-size: 15px;
+    }
+    
+    .bottom-about-us-right-P{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:767px){
+    .about-us{
+        width: 95%;
+    }
+    
+    .top-about-us .h1{
+        font-size: 25px;
+    }
+    .top-about-us .p{
+        font-size: 10px;
+        width: 98%;
+        margin: 20px auto;
+    }
+    
+    .medium-image{
+        height: 30vh;
+    }
+    
+    .medium-image-inner{
+        width: 85%;
+        height: 22vh;
+        transform: translate(15%,50%);
+    }
+    .medium-image-inner-left{
+        width: 25%;
+        margin: auto;
+    }
+    
+    .medium-image-inner-left img{
+        width: 70px;
+        height: 70px;
+        margin-left: 5px;
+    }
+    
+    .medium-image-inner-right{
+        width: 75%;
+        margin: auto;
+        font-size: 7px;
+    }
+    
+    .medium-image-inner-right-p{
+        width: 95%;
+        margin-left: 5px;
+    }
+    
+    .bottom-about-us{
+        padding-top: 90px;
+        padding-bottom: 50px;
+        flex-direction: column;
+    }
+    
+    .bottom-about-us-left{
+        width: 95%;
+        min-height: 70vh ;
+    }
+    
+    .bottom-about-us-left-inner{
+        width: 90%;
+        padding-left: 10px;
+    }
+    
+    .bottom-about-us-left-h{
+        font-size: 15px;
+    }
+    
+    .bottom-about-us-left-P{
+        font-size: 10px;
+    }
+    
+    .bottom-about-us-right{
+        width: 60%;
+    }
+    .bottom-about-us-right-inner{
+        width: 90%;
+    }
+    
+    .bottom-about-us-right-h{
+        font-size: 15px;
+    }
+    
+    .bottom-about-us-right-P{
+        font-size: 10px;
+    }
+}
+
 /* -------------------------------------------------------- end  about us ---------------------------------------------------------- */
 
 /* -------------------------------------------------------- products  ------------------------------------------------------------ */
@@ -1244,13 +1626,21 @@ div.w3-container{
     background: whitesmoke;
     width: 100%;
     padding: 5px 0;
-    font-size: 14px;
+    font-size: 13px;
     margin: 10px 0;
     border: none;
     color: #1e266d;
     border-bottom: 2px solid #1e266d;
     outline: none;
     resize: none;
+}
+
+.contactForm .inputBox textarea{
+    height: 100px;
+    font-size: 13px;
+    padding-top: 15px;
+    font-family: 'Raleway', sans-serif;
+    color: #1e266d;
 }
 
 .contactForm .inputBox span{
