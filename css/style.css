@@ -1476,18 +1476,19 @@ div.w3-container{
     }
     
     .bottom-about-us{
-        padding-top: 90px;
-        padding-bottom: 50px;
+        padding-top: 60px;
+        padding-bottom: 10px;
         flex-direction: column;
     }
     
     .bottom-about-us-left{
-        width: 95%;
+        width: 100%;
+        margin: 0 auto;
         min-height: 70vh ;
     }
     
     .bottom-about-us-left-inner{
-        width: 90%;
+        width: 100%;
         padding-left: 10px;
     }
     
@@ -1500,10 +1501,12 @@ div.w3-container{
     }
     
     .bottom-about-us-right{
-        width: 60%;
+        width: 98%;
     }
     .bottom-about-us-right-inner{
-        width: 90%;
+        width: 100%;
+        padding: 0 0 0 10px;
+        margin-top: 15px;
     }
     
     .bottom-about-us-right-h{
@@ -1512,6 +1515,7 @@ div.w3-container{
     
     .bottom-about-us-right-P{
         font-size: 10px;
+        margin-bottom: 20px;
     }
 }
 
