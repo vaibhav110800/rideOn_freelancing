@@ -9,6 +9,14 @@ font-family: 'Raleway', sans-serif;
 
 button:focus {outline:0;}
 
+#fixedbutton {
+    width: 50px;
+    height: auto;
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    z-index: 5; 
+}
 
 /* -------------------------------------------------------- header ------------------------------------------------------------ */
 
@@ -1550,6 +1558,8 @@ div.w3-container{
     background-color: white;
     box-shadow: 0px 0px 5px 2px rgba(181,181,181,0.55);
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
 }
 .product-box-logo img{
     position: absolute;
@@ -1619,7 +1629,20 @@ div.w3-container{
 .product-box-text-bottom-no a:hover{
     color: #459ba0;
 }
-
+.searchbar{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.searchbar input[type="text"], input[type="password"], textarea, select { 
+    outline: none;
+}
+#searchbar{
+    border: none;
+    border-bottom: 2px solid #1e266d;
+    width: 300px;
+    padding-left: 1%;
+    font-family: 'Raleway', sans-serif;
+}
 @media screen and (min-width:768px) and (max-width:1249px){
     .product-heading{
         font-size: 40px;
