@@ -1,3 +1,5 @@
+// product page
+
 function search_products() {
     let input = document.getElementById('searchbar').value
     input = input.toLowerCase();
@@ -11,4 +13,21 @@ function search_products() {
             x[i].style.display = "flex";
         }
     }
-} 
+}
+
+
+// contact us page
+
+// document.querySelector(".cform").addEventListener("submit",
+//     submitForm);
+
+// function submitForm(e) {
+//     e.preventDefault();
+
+//     let name = document.querySelector(".name").value;
+//     let email = document.querySelector(".email").value;
+//     let message = document.querySelector(".message").value;
+//     console.log(name, email, message);
+
+//     saveContactInfo(name, email, message);
+// }

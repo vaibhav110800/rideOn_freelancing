@@ -93,25 +93,32 @@
                 </div>
             </div>
             <div class="contactForm">
-                <form action="">
+                <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="from_email@example.com"
+                    action="https://script.google.com/macros/s/AKfycbybMJyXYim2DDcySA1NRMNUDgMtutaX3pC-k5azIQ/exec">
                     <h2>SEND MESSAGE</h2>
 
                     <div class="inputBox">
-                        <input type="text" name="" required="required">
+                        <input type="text" name="name" id="name" required="required">
                         <span>Full Name</span>
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="" required="required">
+                        <input type="text" name="email" id="email" required="required">
                         <span>Email</span>
                     </div>
                     <div class="inputBox">
-                        <textarea type="text" required="required"></textarea>
+                        <textarea type="text" required="required" id="message" name="message"></textarea>
                         <span>Type your Message</span>
                     </div>
                     <div class="inputBox">
                         <input type="submit" name="" value="Send">
                     </div>
                 </form>
+                <div style="display:none;" id="thankyou_message">
+                    <h2>
+                        <em>Thanks</em> for contacting us!
+                        We will get back to you soon!
+                    </h2>
+                </div>
             </div>
         </div>
     </section>
@@ -159,7 +166,7 @@
         </div>
     </div>
     <!---------------------------------- end footer ---------------------------------->
-
+    <script src="js/app.js"></script>
     <script>
         window.onscroll = function () { myFunction() };
 
@@ -174,6 +181,9 @@
             }
         }
     </script>
+
+    <script data-cfasync="false" type="text/javascript"
+        src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
 </body>
 
 </html>
