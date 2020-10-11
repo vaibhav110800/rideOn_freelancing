@@ -32,3 +32,6 @@ function search_products() {
 //     saveContactInfo(name, email, message);
 // }
 
+function refreshPage() {
+    window.location.reload();
+}

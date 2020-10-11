@@ -93,32 +93,28 @@
                 </div>
             </div>
             <div class="contactForm">
-                <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="from_email@example.com"
-                    action="https://script.google.com/macros/s/AKfycbybMJyXYim2DDcySA1NRMNUDgMtutaX3pC-k5azIQ/exec">
+                <form method="POST" autocomplete="off" name="google-sheet">
                     <h2>SEND MESSAGE</h2>
 
                     <div class="inputBox">
-                        <input type="text" name="name" id="name" required="required">
+                        <input type="text" name="name" id="name" required="required" class="form-control">
                         <span>Full Name</span>
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="email" id="email" required="required">
+                        <input type="text" name="email" id="email" required="required" class="form-control">
                         <span>Email</span>
                     </div>
                     <div class="inputBox">
-                        <textarea type="text" required="required" id="message" name="message"></textarea>
+                        <textarea type="text" required="required" id="message" name="message"
+                            class="form-control"></textarea>
                         <span>Type your Message</span>
                     </div>
                     <div class="inputBox">
-                        <input type="submit" name="" value="Send">
+                        <input type="submit" name="submit" class="btnSubmit btn-block" value="Send"
+                            onClick="refreshPage()">
                     </div>
                 </form>
-                <div style="display:none;" id="thankyou_message">
-                    <h2>
-                        <em>Thanks</em> for contacting us!
-                        We will get back to you soon!
-                    </h2>
-                </div>
+
             </div>
         </div>
     </section>
@@ -182,8 +178,17 @@
         }
     </script>
 
-    <script data-cfasync="false" type="text/javascript"
-        src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwgbwSwJCD9sqGPJOqGIFywMTPyOpCTrduCDVdHuza6XP2dxYo/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+        });
+    </script>
 </body>
 
 </html>
