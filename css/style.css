@@ -15,7 +15,7 @@ button:focus {outline:0;}
     position: fixed;
     bottom: 3%;
     right: 2%;
-    z-index: 5; 
+    z-index: 30; 
 }
 
 /* -------------------------------------------------------- header ------------------------------------------------------------ */
@@ -173,7 +173,7 @@ div.w3-container{
     top: 0;
     width: 100%;
     background-color: white;
-    z-index: 3;
+    z-index: 30;
   }
 
 /* ------------------ carousel --------------------- */
@@ -195,77 +195,16 @@ div.w3-container{
     flex-direction: column;
     width: 65%;
 }
-.about-image{
-    height: 60vh;
-    width: 90%;
-    margin: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.about-image-in{
+.slider-main{
     height: 60vh;
-    width: 90%;
-    margin: auto;
-}
-
-.slideshow{
-    width: 100%;
-    height: 60vh;
-    position: relative;
+    width: 82%;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     overflow: hidden;
-    opacity: .7;
-    background-color: white;
-}
-
-.slideshow-item{
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    opacity: 0;
-    animation: cycleImages 20s infinite;
-    background-position: center;
-}
-
-.slideshow-item img{
-    width: 100%;
-    height: 100%;
     object-fit: cover;
-    
-    animation: zoom 20s infinite;
-}
-
-.slideshow-item:nth-child(1),
-.slideshow-item:nth-child(1) img{
-    animation-delay: 0s;
-}
-.slideshow-item:nth-child(2),
-.slideshow-item:nth-child(2) img{
-    animation-delay: 5s;
-}
-.slideshow-item:nth-child(3),
-.slideshow-item:nth-child(3) img{
-    animation-delay: 10s;
-}
-.slideshow-item:nth-child(4),
-.slideshow-item:nth-child(4) img{
-    animation-delay: 15s;
-}
-
-@keyframes cycleImages{
-    15%{
-        opacity: 1;
-    }
-    30%{
-        opacity: 0;
-    }
-}
-
-@keyframes zoom{
-    100%{
-        transform: scale(1.3);
-    }
 }
 
 .main-home-left-bottom{
@@ -336,11 +275,9 @@ div.w3-container{
 }
 
 @media screen and (min-width:1000px) and (max-width:1299px){
-    .about-image{
-        width: 98%;
-    }
-    .about-image-in{
-        width: 98%;
+    .slider-main{
+        width: 95%;
+        height: 50vh;
     }
 
     .main-home-left-bottom{
@@ -365,13 +302,10 @@ div.w3-container{
 }
 
 @media screen and (min-width:768px) and (max-width:999px){
-    .about-image{
-        width: 98%;
+    .slider-main{
+        width: 95%;
+        height: 50vh;
     }
-    .about-image-in{
-        width: 98%;
-    }
-
     .main-home-left-bottom{
         width: 99%;
     }
@@ -417,17 +351,9 @@ div.w3-container{
     .main-home-left{
         width: 98%;
     }
-    .about-image{
-        height: 40vh;
-        width: 98%;
-    }
-    
-    .about-image-in{
-        height: 40vh;
-        width: 98%;
-    }
-    .slideshow{
-        width: 100%;
+    .slider-main{
+        width: 95%;
+        margin: 0;
         height: 40vh;
     }
     .main-home-left-bottom{
@@ -701,7 +627,91 @@ div.w3-container{
     border-radius: 2px;
     z-index: 2;
 }
-
+.popup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.8);
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    transition: .74s ease-in-out;
+}
+.popup-inner{
+    position: relative;
+    bottom: -100vw;
+    right: -100vh;
+    display: flex;
+    align-items: center;
+    max-width: 320px;
+    max-height: 399px;
+    width: 59%;
+    height: 80%;
+    background-color: whitesmoke;
+    transform: rotate(32deg);
+    transition: .74s ease-in-out;
+}
+.popup-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+.popup-text h1{
+    font-family: 'Libre Franklin', sans-serif;
+    color: #1e266d;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+.popup-text a{
+    font-family: 'Montserrat', sans-serif;
+    color: #00387a;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 15px;
+    transition: .2s ease-in-out;
+}
+.popup-text a:hover{
+    color: #459ba0;
+}
+.popup:target{
+    visibility: visible;
+    opacity: 1;
+}
+.popup:target .popup-inner{
+    bottom: 0;
+    right: 0;
+    transform: rotate(0);
+}
+.popup-close{
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 15px;
+    border-radius: 50%;
+    background-color:#459ba0;
+    z-index: 6;
+    color: white;
+    line-height: 3rem;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+.popup-close:hover{
+    background-color:#00387a;
+}
 .logo-box-box img{
     width: 180px;
 }
@@ -1032,9 +1042,9 @@ div.w3-container{
 }
 .footer-box p{
     color: #d3f6f6;
-    width: 70%;
+    width: 80%;
     font-family: 'Raleway', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
 }
 .footer-box h2{
     font-family: 'Montserrat', sans-serif;
@@ -1232,23 +1242,24 @@ div.w3-container{
 }
 
 .medium-image-inner-right{
-    width: 75%;
+    width: 80%;
     margin: auto;
     font-family: 'Raleway', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     color:#d3f6f6;
 }
 
 .medium-image-inner-right-p{
-    width: 90%;
-    /* margin: 0 auto; */
+    width: 95%;
     text-align: left;
+    line-height: 18px;
 }
 
+
 .bottom-about-us{
-    padding-top: 90px;
+    padding-top: 50px;
     display: flex;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 .bottom-about-us-left{
@@ -1347,9 +1358,9 @@ div.w3-container{
         margin: auto;
         font-size: 9px;
     }
-    
     .medium-image-inner-right-p{
         width: 95%;
+        line-height: 14px;
     }
     
     .bottom-about-us{
@@ -1431,6 +1442,7 @@ div.w3-container{
     
     .medium-image-inner-right-p{
         width: 98%;
+        line-height: 14px;
     }
     
     .bottom-about-us{
@@ -1515,6 +1527,7 @@ div.w3-container{
     .medium-image-inner-right-p{
         width: 95%;
         margin-left: 5px;
+        line-height: 12px;
     }
     
     .bottom-about-us{
