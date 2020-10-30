@@ -626,7 +626,7 @@ div.w3-container{
     border-radius: 5px;
     border: .01px solid white;
     transition: box-shadow .2s linear;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .logo-box-box:hover{
     background-color: #f8f9fa;
