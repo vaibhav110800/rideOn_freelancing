@@ -89,28 +89,26 @@
                 </div>
             </div>
             <div class="contactForm">
-                <form method="POST" name="contact" role="form" class="php-email-form" netlify>
-                    <h2>SEND MESSAGE</h2>
+                <form method="POST" name="contact" role="form" class="php-email-form" netlify></form>
+                <h2>SEND MESSAGE</h2>
 
-                    <div class="inputBox">
-                        <input type="text" name="name" id="name" required="required" class="form-control">
-                        <span>Full Name</span>
-                    </div>
-                    <div class="inputBox">
-                        <input type="text" name="email" id="email" required="required" class="form-control">
-                        <span>Email</span>
-                    </div>
-                    <div class="inputBox">
-                        <textarea type="text" required="required" id="message" name="message"
-                            class="form-control"></textarea>
-                        <span>Type your Message</span>
-                    </div>
-                    <div class="inputBox">
-                        <input type="submit" name="submit" class="btnSubmit btn-block" value="Send"
-                            onClick="refreshPage()">
-                    </div>
+                <div class="inputBox">
+                    <input type="text" name="name" id="name" required="required" class="form-control">
+                    <span>Full Name</span>
+                </div>
+                <div class="inputBox">
+                    <input type="email" name="email" id="email" required="required" class="form-control">
+                    <span>Email</span>
+                </div>
+                <div class="inputBox">
+                    <textarea type="text" required="required" id="message" name="message"
+                        class="form-control"></textarea>
+                    <span>Type your Message</span>
+                </div>
+                <div class="inputBox">
+                    <button type="submit" class="btnSubmit btn-block">Send</button>
+                </div>
                 </form>
-
             </div>
         </div>
     </section>

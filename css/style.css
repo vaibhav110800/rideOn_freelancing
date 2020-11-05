@@ -1895,7 +1895,7 @@ div.w3-container{
     transform: translateY(-16px);
 }
 
-.contactForm .inputBox input[type="submit"]{
+.contactForm .inputBox button{
     width: 100px;
     background-color: #84e0e4;
     color: #00387a;
@@ -1905,7 +1905,7 @@ div.w3-container{
     font-size: 17px;
     transition: .3s ease-in-out;
 }
-.contactForm .inputBox input[type="submit"]:hover{
+.contactForm .inputBox button{
     background-color: transparent;
     color: #00387a;
 }
